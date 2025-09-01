@@ -1,42 +1,3 @@
-"""
-00 1054560
-01 342732000
-02 47297016000
-03 3641870232000
-04 172988836020000
-05 5293458382212000
-06 105869167644240000
-07 1376299179375120000
-08 11354468229844740000
-09 56772341149223700000
-10 158962555217826360000
-11 216767120751581400000
-12 108383560375790700000
-13 8337196951983900000
-
-from math import factorial
-def f(k: int):
-    return 60 * 26 ** 3 * factorial(26) // (factorial(26 - 2 * k) * factorial(k) * 2 ** k)
-def g(k: int):
-    return 26 ** 2 * factorial(26) ** 5 // (2 ** (13 + k) * factorial(13) * factorial(26 - 2 * k) * factorial(k))
-print(f(10), f(11), sum(map(f, range(14))), g(10), g(11), sum(map(g, range(14))), sep='\n')
-
-                 f(10) =  158962555217826360000
-                 f(11) =  216767120751581400000
-sum(map(f, range(14))) =  562064881159999426560
-                 g(10) =  52841615182541934867380880379974902806941642035152636578099608189263918507485623746560000000000000000000000000
-                 g(11) =  72056747976193547546428473245420322009465875502480868061044920258087161601116759654400000000000000000000000000
-sum(map(g, range(14))) = 186839071108157384996636441415047152219471994297031498823429747361328478992481746954485760000000000000000000000
-
-usgovernmentofficialshavedisputedcriticismsofprismintheguardianandwashingtonpostarticlesandhavedefendedtheprogramassertingthatitcannotbeusedondomestictargetswithoutawarrantthatithashelpedtopreventactsofterrorismandthatitreceivesindependentoversightfromthefederalgovernmentsexecutivejudicialandlegislativebranches
-dttnjmhxnjyqfovbienfpjwbmsxicrqbzbcochlvrvukwfshbbogbbwclgpojxhhqgmjoggllkekkfdzznvbyghflwvxgwijmedtsfijntkauvemjxadgnvmoixefkuetsqgfhpxezuslzyryvvbhlrdhdhvuvnujrgyhrylwqtkayqnmbxqrctuvceerebbbrfobhoxtsomhxdgbjfpcpfptybdnimvjotllchpidmiqhgnjgnoqhixsbprhwzdlvbaodfvnazyvtljkxtppiwenrwderwwzrkdwpccucuiwtdblbtcxomp
-
-zgfyjkjigdgdakyscwyckdcknx
-
-veczyptmon
-decryption
-"""
-
 _all__ = ["Pair", "Rotor", "all_rotors", "reflector", "civil_encryption", "military_encryption"]
 
 
@@ -180,3 +141,4 @@ def military_encryption(message: str, rotors: list[Rotor], rotor1rotations: int,
 
 if __name__ == "__main__":
     print(civil_encryption('testingencryptiondecryption', [rotor1, rotor2, rotor3], 2, 1, 1))
+
