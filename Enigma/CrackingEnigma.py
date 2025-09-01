@@ -207,13 +207,3 @@ def decrypt_military_enigma(message: str, supposed_substring: str):
                         rotors[1] = rotors[1].rotated()
 
                     rotors[2] = rotors[2].rotated()
-
-
-item = decrypt_civil_enigma('nfiyzlxawymgksnxwtjlnslnndc', 'testinge')
-# 1 2 3 | 02 01 01 | [t-l, h-q, e-n, s-y, f-g] | bcdijkmopruvwxz-> testuwg 31.431917190551758
-t = time()
-
-for el in item:
-    print(el, time() - t)
-# 1 2 3 | 01 01 02 | [t-l, e-n, s-y, i-u, g-f, k-o, r-m, c-p, q-h] | adjv-> testingencryptionveczyptmon 622.9634838104248
-# 1 2 3 | 02 01 01 | [t-l, h-q, e-n, s-y, f-g, i-u, m-r, d-v, c-p, o-k] | -> testingencryptiondecrypioon 42.60205960273743
