@@ -67,12 +67,12 @@ class Rotor:
     __repr__ = __str__
 
 
-rotor1 = Rotor('vytabhdqojlsuepfriwcxngmkz')
-rotor2 = Rotor('fwoiphmxknurscqeaglvdbtjzy')
-rotor3 = Rotor('vknhdfbulcqprjzemogxitsayw')
-rotor4 = Rotor('xtkazsnyolwqifugdpbrmjchev')
-rotor5 = Rotor('lmeoipfgysbrkhjudqcvanxwzt')
-all_rotors = [rotor1, rotor2, rotor3, rotor4, rotor5]
+rotor0 = Rotor('vytabhdqojlsuepfriwcxngmkz')
+rotor1 = Rotor('fwoiphmxknurscqeaglvdbtjzy')
+rotor2 = Rotor('vknhdfbulcqprjzemogxitsayw')
+rotor3 = Rotor('xtkazsnyolwqifugdpbrmjchev')
+rotor4 = Rotor('lmeoipfgysbrkhjudqcvanxwzt')
+all_rotors = [rotor0, rotor1, rotor2, rotor3, rotor4]
 reflector = [Pair('a', 'p'), Pair('h', 'l'), Pair('v', 'n'), Pair('s', 'z'), Pair('k', 'x'), Pair('e', 'b'),
              Pair('q', 'w'), Pair('j', 'm'), Pair('i', 'd'), Pair('o', 'c'), Pair('u', 'g'), Pair('t', 'f'),
              Pair('r', 'y')]
@@ -140,5 +140,4 @@ def military_encryption(message: str, rotors: list[Rotor], rotor1rotations: int,
 
 
 if __name__ == "__main__":
-    print(civil_encryption('testingencryptiondecryption', [rotor1, rotor2, rotor3], 2, 1, 1))
-
+    print(civil_encryption('testingencryptiondecryption', [rotor0, rotor1, rotor2], 2, 1, 1))
